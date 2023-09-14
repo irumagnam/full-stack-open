@@ -13,12 +13,12 @@ sequenceDiagram
     server-->>browser: HTML Document
     deactivate server
 
-    browser-->>browser: GET /exampleapp/main.css
+    browser-->>server: GET /exampleapp/main.css
     activate server
     server-->>browser: the CSS file
     deactivate server
 
-    browser->>browser: GET /exampleapp/main.js
+    browser->>server: GET /exampleapp/main.js
     activate server
     server-->>browser: the JavaScript file
     deactivate server
