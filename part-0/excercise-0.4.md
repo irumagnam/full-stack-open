@@ -13,11 +13,15 @@ sequenceDiagram
     server-->>browser: HTML Document
     deactivate server
 
-    browser-->>browser: GET /exampleapp/main.css
-    Note right of browser: The browser loads the file from cache
+    browser-->>server: GET /exampleapp/main.css
+    activate server
+    server-->>browser: the CSS file
+    deactivate server
 
-    browser->>browser: GET /exampleapp/main.js
-    Note right of browser: The browser loads the file from cache
+    browser->>server: GET /exampleapp/main.js
+    activate server
+    server-->>browser: the JavaScript file
+    deactivate server
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
     activate server
