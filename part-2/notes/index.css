@@ -1,0 +1,26 @@
+h1 {
+  color: green;
+  font-style: italic;
+}
+
+button {
+  background-color: rgb(205, 215, 231);
+}
+
+.note {
+  color: grey;
+  padding-top: 3px;
+  font-size: 15px;
+}
+
+.error {
+  color: red;
+  background: rgb(235, 230, 230);
+  font-size: 16px;
+  border-width: 1px;
+  border-color: #999;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
